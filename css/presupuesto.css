@@ -1,0 +1,188 @@
+/* Estilos generales formulario */
+form {
+    margin: 100px auto;
+    padding: 50px 80px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px var(--gris);
+    max-width: 600px;
+    background-color: var(--azul_2);
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+    color: var(--azul_7);
+    text-decoration: underline;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--negro);
+}
+
+a {
+    color: var(--azul_6);
+    text-decoration: none;
+}
+
+fieldset {
+    margin-bottom: 20px;
+    border-radius: 25px;
+    color: var(--azul_7);
+    border-color: transparent;
+}
+
+/*--------------------------------------*/
+
+/* Estilos para campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea,
+select {
+    width: 250px;
+    height: 38px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--azul_7);
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Roboto';
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button {
+    background-color: var(--azul_5);
+    color: var(--blanco);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: var(--naranja);
+}
+
+/*--------------------------------------*/
+
+/* Estilos para el presupuesto */
+#presupuesto {
+    font-size: 18px;
+    color: var(--gris);
+    margin-top: 20px;
+}
+
+#presupuestoTotal {
+    font-size: 30px; 
+    color: var(--naranja);
+}
+
+/*--------------------------------------*/
+
+/* Estilos para la imagen del producto */
+#imagenProducto {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 16px;
+}
+
+/*--------------------------------------*/
+
+/* Estilos para términos y condiciones */
+#terminos-condiciones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+#aceptoPolitica {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/*--------------------------------------*/
+
+/* Estilos para el mensaje de agradecimiento */
+#mensajeAgradecimiento {
+    display: none;
+    background-color: var(--blanco);
+    border: 1px solid var(--blanco);
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 100px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    color: var(--gris);
+    text-align: center;
+}
+
+#mensajeAgradecimiento h2 {
+    color: var(--azul_7);
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#mensajeAgradecimiento p {
+    margin: 5px 0;
+}
+
+#mensajeAgradecimiento span {
+    font-weight: bold;
+}
+
+#mensajeAgradecimiento img {
+    display: block;
+    margin: 10px auto;
+    max-width: 50%;
+    height: auto;
+}
+
+/*--------------------------------------*/
+
+/* Estilos para la tabla de agradecimiento */
+.tablaAgradecimiento {
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+}
+
+.tablaAgradecimiento td {
+    padding: 8px;
+    border: none;
+}
+
+.imagenProducto {
+    text-align: center;
+}
+
+.imagenProducto img {
+    max-width: 100%;
+    height: auto;
+}
+
+.presupuestoTotal {
+    text-align: center;
+    font-size: 1.5em;
+    color: var(--naranja);
+}
+
+/*--------------------------------------*/

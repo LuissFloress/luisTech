@@ -1,0 +1,124 @@
+/* ESTILOS GENERALES*/
+
+/* Colores paginas*/
+:root {
+    --blanco: #ffffff;
+    --naranja: #FF8300;
+    --color_noticias: #007bff;
+    --negro: #000000;
+    --gris: #333;
+    
+    --azul_1: #007bff;
+    --azul_2: #b5eaff;
+    --azul_3: #48cbff;
+    --azul_4: #068fff;
+    --azul_5: #085ec5;
+    --azul_6: #007bff;
+    --azul_7: #0d519b;   
+}
+
+/*--------------------------------------*/
+
+/* Fuente letra*/
+@font-face {
+    font-family: 'Digital';
+    src: url('../assets/fonts/Digital/DS-DIGIB.TTF') format('truetype');
+    font-weight: normal;
+    font-style:normal
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../assets/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+    font-weight: 200;
+    font-style:normal
+}
+/*--------------------------------------*/
+
+/* Cuerpo */
+body {
+    font-family: 'Roboto';
+    margin: 0;
+    padding: 0;
+}
+
+/*--------------------------------------*/
+
+/* Barra de navegación*/
+nav {
+    font-family: 'Digital';
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--negro);
+    margin: 0 15px;
+    padding: 10px 15px;
+
+}
+
+nav a.active {
+    background-color: var(--azul_1);
+    border-radius: 18px;
+    color: var(--blanco);
+}
+
+nav a:hover {
+    background-color: var(--azul_2);
+    color: var(--negro);
+    border-radius: 18px;
+}
+
+#logo_empresa {
+    height: 45px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+/*--------------------------------------*/
+
+/* Pie de pagina */
+footer {
+    background-color: var(--azul_7);
+    color: var(--blanco);
+    padding: 25px;
+    text-align: center;
+}
+
+#footer-contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#redes-sociales a img {
+    width: 35px;
+    height: 35px;
+    margin: 0 10px;
+}
+
+#datos-empresa p {
+    margin: 5px 0;
+}
+
+#aviso-legal a {
+    color: var(--naranja);
+    text-decoration: none;
+}
+
+/*--------------------------------------*/

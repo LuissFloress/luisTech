@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuisTech - Innovación y Soluciones Tecnológicas</title>
+    <!-- Icono barra navegador -->
+    <link rel="icon" href="./assets/img/icono_luistech_2.png" type="image/x-icon">
+    <!-- Enlace a los estilos generales -->
+    <link rel="stylesheet" href="./css/estilos.css">
+    <!-- Enlace a los estilos pagina index -->
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+
+    <!-- Barra Navegación-->
+    <nav>
+        <img src="./assets/img/LuisTech_2.png" alt="Logo_Empresa" id="logo_empresa" width="180" height="5">
+        <div class="nav-links">
+            <a href="index.html" class="active">Inicio</a>
+            <a href="./views/productos.html">Productos</a>
+            <a href="./views/presupuesto.html">Presupuesto</a>
+            <a href="./views/contacto.html">Contacto</a>
+        </div>
+    </nav>
+    
+
+    <!-- Sección Lema Empresa -->
+    <div id="encabezado">
+        <h2>Transforma tu negocio con nuestra tecnología de vanguardia</h2>
+        <p>En LuisTech, ofrecemos soluciones tecnológicas personalizadas para hacer crecer tu empresa.</p>
+        <a href="./views/productos.html" class="cta-button">Descubre nuestros productos</a>
+    </div>
+
+    <!-- Sección Servicios -->
+    <section id="services">
+        <h2>Nuestros Servicios</h2>
+        <div class="features">
+            <div class="feature">
+                <h3>Innovación</h3>
+                <p>Nos mantenemos a la vanguardia de las últimas tendencias tecnológicas.</p>
+            </div>
+            <div class="feature">
+                <h3>Soluciones a Medida</h3>
+                <p>Adaptamos nuestras soluciones a las necesidades específicas de cada cliente.</p>
+            </div>
+            <div class="feature">
+                <h3>Soporte 24/7</h3>
+                <p>Nuestro equipo está disponible en todo momento para brindarte apoyo técnico.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Noticias -->
+    <section id="noticias">
+        <h2>Noticias</h2>
+        <div id="news-container">
+            <!-- Aquí se cargarán las noticias desde el archivo JSON -->
+        </div>
+    </section>
+
+    <!-- Sección Opinion Clientes -->
+    <section id="clientes">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <div id="clientes-opinion">
+            <blockquote>
+                <p>"LuisTech ha transformado nuestra manera de trabajar. Su plataforma de IA es increíble." <br><span>- Juan Pérez, CEO de TechCorp</span></p>
+            </blockquote>
+            <blockquote>
+                <p>"El soporte 24/7 de LuisTech es insuperable. Siempre están ahí cuando los necesitamos." <br><span>- María López, Directora de Innovación en Innovatech</span></p>
+            </blockquote>
+            <blockquote>
+                <p>"La implementación de las soluciones de LuisTech fue rápida y sin problemas. ¡Altamente recomendados!" <br><span>- Carlos García, CTO de SoftSolutions</span></p>
+            </blockquote>
+            <blockquote>
+                <p>"Gracias a LuisTech, hemos mejorado nuestra eficiencia operativa en un 30%. Su equipo es muy profesional." <br><span>- Ana Martínez, Gerente de Operaciones en LogiTech</span></p>
+            </blockquote>
+        </div>
+    </section>
+    
+    <!-- Sección Footer -->
+    <footer>
+        <div id="footer-contenido">
+            <div id="redes-sociales">
+                <a href="https://www.facebook.com" target="_blank"><img src="./assets/icons/facebook.png" alt="Facebook" width="45" height="45"></a>
+                <a href="https://www.twitter.com" target="_blank"><img src="./assets/icons/twitter.png" alt="Twitter" width="45" height="45"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="./assets/icons/instagram.png" alt="Instagram" width="45" height="45"></a>
+                <a href="https://www.linkedin.com" target="_blank"><img src="./assets/icons/linkedin.png" alt="LinkedIn" width="45" height="45"></a>
+                <a href="https://maps.app.goo.gl/9bQyX8vTD6aa91fb9" target="_blank"><img src="./assets/icons/google_maps.png" alt="Google_Maps" width="45" height="45"></a>
+
+            </div>
+            <div id="datos-empresa">
+                <p>Dirección: C. Bari, 4, 50197 Zaragoza, España</p>
+                <p>Teléfono: +34 123 456 789</p>
+                <p>Email: contacto@luistech.com</p>
+            </div>
+            <div id="aviso-legal">
+                <a href="./views/aviso_legal.html">Aviso Legal</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Enlace al archivo JavaScript para cargar el JSON -->
+    <script defer src="./assets/Json/noticias.json"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Script -->
+    <script src="./js/script.js"></script>
+    
+</body>
+</html>

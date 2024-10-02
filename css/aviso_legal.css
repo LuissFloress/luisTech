@@ -1,0 +1,56 @@
+/* Encabezado */ 
+header {
+    background-color: var(--azul_7);
+    color: var(--blanco);
+    padding: 20px;
+    text-align: center;
+}
+
+/*--------------------------------------*/
+
+/* Titulos */
+h1, h2 {
+    color: var(--azul_6);
+}
+
+/*--------------------------------------*/
+
+/* Aviso legal */
+#aviso_legal {
+    padding-top: 70px;
+}
+
+#aviso_legal h1 {
+    color: var(--blanco);
+}
+
+/*--------------------------------------*/
+
+/* Texto aviso legal */
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    border-bottom: 2px solid var(--naranja);
+    padding-bottom: 5px;
+}
+
+p, ul {
+    line-height: 1.6;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+a {
+    color: var(--naranja);
+    text-decoration: none;
+}
+
+#texto {
+    padding: 0px 30px;
+    margin: 50px 0;
+    margin-left: 30px;
+}

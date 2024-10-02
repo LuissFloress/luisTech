@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuisTech - Innovación y Soluciones Tecnológicas</title>
+    <!-- Icono barra navegador -->
+    <link rel="icon" href="../assets/img/icono_luistech_2.png" type="image/x-icon">
+    <!-- Enlace a los estilos generales -->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <!-- Enlace a los estilos productos -->
+    <link rel="stylesheet" href="../css/contacto.css">
+    <!-- Enlace a los estilos de Leaflet-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css">
+
+</head>
+<body>
+
+    <!-- Barra navegación -->
+    <nav>
+        <img src="../assets/img/LuisTech_2.png" alt="Logo_Empresa" id="logo_empresa" width="180" height="5">
+        <div class="nav-links">
+            <a href="../index.html">Inicio</a>
+            <a href="../views/productos.html" >Productos</a>
+            <a href="../views/presupuesto.html">Presupuesto</a>
+            <a href="../views/contacto.html" class="active">Contacto</a>
+        </div>
+    </nav>    
+
+    <!-- Mapa e informacion de la empresa -->
+    <div class="container">
+        <div id="mapa"></div>
+        <div id="contacto">
+            <img src="../assets/img/LuisTech_2.png" alt="LuisTech Logo" width="180" height="50">
+            <p><span>Dirección:</span> C. Bari, 4, 50197 Zaragoza, España</p>
+            <p><span>Teléfono:</span> +34 123 456 789</p>
+            <p><span>Email:</span> contacto@luistech.com</p>
+        </div>
+    </div>
+
+    <!-- Sección Footer -->
+    <footer>
+        <div id="footer-contenido">
+            <div id="redes-sociales">
+                <a href="https://www.facebook.com" target="_blank"><img src="../assets/icons/facebook.png" alt="Facebook" width="45" height="45"></a>
+                <a href="https://www.twitter.com" target="_blank"><img src="../assets/icons/twitter.png" alt="Twitter" width="45" height="45"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="../assets/icons/instagram.png" alt="Instagram" width="45" height="45"></a>
+                <a href="https://www.linkedin.com" target="_blank"><img src="../assets/icons/linkedin.png" alt="LinkedIn" width="45" height="45"></a>
+                <a href="https://maps.app.goo.gl/9bQyX8vTD6aa91fb9" target="_blank"><img src="../assets/icons/google_maps.png" alt="Google_Maps" width="45" height="45"></a>
+            </div>
+            
+            <div id="datos-empresa">
+                <p>Dirección: C. Bari, 4, 50197 Zaragoza, España</p>
+                <p>Teléfono: +34 123 456 789</p>
+                <p>Email: contacto@luistech.com</p>
+            </div>
+            <div id="aviso-legal">
+                <a href="../views/aviso_legal.html">Aviso Legal</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script de Leaflet -->
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+    <script src="../js/contacto.js"></script>
+
+</body>
+</html>

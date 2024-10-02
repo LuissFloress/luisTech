@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuisTech - Innovación y Soluciones Tecnológicas</title>
+    <!-- Icono barra navegador -->
+    <link rel="icon" href="../assets/img/icono_luistech_2.png" type="image/x-icon">
+    <!-- Enlace a los estilos generales -->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <!-- Enlace a los estilos productos -->
+    <link rel="stylesheet" href="../css/presupuesto.css">
+</head>
+<body>
+
+    <!-- Barra navegación -->
+    <nav>
+        <img src="../assets/img/LuisTech_2.png" alt="Logo_Empresa" id="logo_empresa" width="180" height="5">
+        <div class="nav-links">
+            <a href="../index.html">Inicio</a>
+            <a href="../views/productos.html" >Productos</a>
+            <a href="../views/presupuesto.html" class="active">Presupuesto</a>
+            <a href="../views/contacto.html">Contacto</a>
+        </div>
+    </nav>
+
+    <!-- Formulario cliente -->
+    <div id="contenedorFormulario" style="display: block;">
+        <form id="formularioPresupuesto" method="POST">
+            
+            <!-- Datos cliente-->
+            <fieldset>
+                <h1>Datos Cliente</h1>
+                
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="apellido1">Apellido 1:</label>
+                <input type="text" id="apellido1" name="apellido1" required>
+                
+                <label for="apellido2">Apellido 2:</label>
+                <input type="text" id="apellido2" name="apellido2" required>
+                
+                <label for="empresa">Nombre de la Empresa:</label>
+                <input type="text" id="empresa" name="empresa">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </fieldset>
+
+            <!-- Calcular presupuesto -->            
+            <fieldset>
+                <h1>Calculadora de Presupuesto</h1>
+        
+                <label for="producto">Selecciona un producto:</label>
+                <select id="producto" required>
+                    <option value="" disabled selected>PRODUCTOS</option>
+                    <optgroup label="Inteligencia Artificial">
+                        <option value="IA_01">Nvidia DGX A100</option>
+                        <option value="IA_02">Google Coral Dev Board</option>
+                        <option value="IA_03">Intel Neural Compute Stick 2</option>
+                    </optgroup>
+        
+                    <optgroup label="Computación Cuántica">
+                        <option value="CC_01">IBM Quantum System One</option>
+                        <option value="CC_02">D-Wave Advantage</option>
+                        <option value="CC_03">Rigetti Aspen-9</option>
+                    </optgroup>
+        
+                    <optgroup label="Energías Renovables">
+                        <option value="ER_01">Tesla Powerwall</option>
+                        <option value="ER_02">LG Chem RESU</option>
+                        <option value="ER_03">SunPower Solar Panels</option>
+                    </optgroup>
+        
+                    <optgroup label="Impresión 3D">
+                        <option value="IP_01">Creality Ender 3</option>
+                        <option value="IP_02">Prusa i3 MK3S+</option>
+                        <option value="IP_03">Anycubic Photon Mono X</option>
+                    </optgroup>
+                </select>
+                
+                <br><br>
+                
+                <label for="plazoPago">Plazo de pago (meses):</label>
+                <input type="number" id="plazoPago" min="1" value="1">
+                
+                <br><br>
+                
+                <label for="extras">Extras (separados por comas):</label>
+                <input type="text" id="extras" placeholder="Ej: extra1,extra2">
+                
+                <br><br>
+                
+                <h2 id="presupuesto">Presupuesto Total: 0€</h2>
+                <img id="imagenProducto" src="../assets/img/LuisTech_2.png" alt="imagen-producto" width="180" height="5">
+            </fieldset>
+            
+            <!-- Terminos y codiciones -->
+            <div id="terminos-condiciones">
+                <input type="checkbox" id="aceptoPolitica" name="aceptoPolitica" required>
+                <label for="aceptoPolitica">Acepto la <a href="https://www.aepd.es/politica-de-privacidad-y-aviso-legal" target="_blank">política de privacidad</a></label>
+            </div>
+            
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+
+        </form>
+    </div>
+
+    <!-- Mensaje agradecimiento cliente-->
+    <div id="mensajeAgradecimiento" style="display: none;">
+        <h2>¡Gracias por tu solicitud!</h2>
+        <table class="tablaAgradecimiento">
+            <tr>
+                <td>Nombre:</td>
+                <td><span id="nombreCliente"></span></td>
+            </tr>
+
+            <tr>
+                <td>Apellido 1:</td>
+                <td><span id="apellido1Cliente"></span></td>
+            </tr>
+
+            <tr>
+                <td>Apellido 2:</td>
+                <td><span id="apellido2Cliente"></span></td>
+            </tr>
+
+            <tr>
+                <td>Empresa:</td>
+                <td><span id="empresaCliente"></span></td>
+            </tr>
+
+            <tr>
+                <td>Email:</td>
+                <td><span id="emailCliente"></span></td>
+            </tr>
+
+            <tr>
+                <td>Teléfono:</td>
+                <td><span id="telefonoCliente"></span></td>
+            </tr>
+
+            <tr>
+                <td>Producto:</td>
+                <td><span id="productoSeleccionado"></span></td>
+            </tr>
+
+            <tr>
+                <td colspan="2" class="imagenProducto">
+                    <img id="imagenProductoSeleccionado" src="../assets/img/LuisTech_2.png" alt="Imagen del producto" width="180" height="5">
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" class="presupuestoTotal">
+                    <span id="presupuestoTotal"></span>
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+    <!-- Sección Footer -->
+    <footer>
+        <div id="footer-contenido">
+            <div id="redes-sociales">
+                <a href="https://www.facebook.com" target="_blank"><img src="../assets/icons/facebook.png" alt="Facebook" width="45" height="45"></a>
+                <a href="https://www.twitter.com" target="_blank"><img src="../assets/icons/twitter.png" alt="Twitter" width="45" height="45"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="../assets/icons/instagram.png" alt="Instagram" width="45" height="45"></a>
+                <a href="https://www.linkedin.com" target="_blank"><img src="../assets/icons/linkedin.png" alt="LinkedIn" width="45" height="45"></a>
+                <a href="https://maps.app.goo.gl/9bQyX8vTD6aa91fb9" target="_blank"><img src="../assets/icons/google_maps.png" alt="Google_Maps" width="45" height="45"></a>
+            </div>
+
+            <div id="datos-empresa">
+                <p>Dirección: C. Bari, 4, 50197 Zaragoza, España</p>
+                <p>Teléfono: +34 123 456 789</p>
+                <p>Email: contacto@luistech.com</p>
+            </div>
+
+            <div id="aviso-legal">
+                <a href="../views/aviso_legal.html">Aviso Legal</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script formulario presupuesto-->
+    <script src="../js/presupuesto.js"></script>
+</body>
+</html>

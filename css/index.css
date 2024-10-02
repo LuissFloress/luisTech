@@ -1,0 +1,123 @@
+/* Sección "Lema empresa" */
+#encabezado{
+    background-image: url('../assets/img/silicio.jpg');
+    background-size: cover;
+    padding: 100px 20px;
+    text-align: center;
+    color: var(--blanco);
+}
+
+#encabezado h2 {
+    font-size: 32px;
+
+}
+#encabezado p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+    /* Boton "Descubre nuestros productos" */
+.cta-button { 
+    background-color: var(--naranja);
+    color: var(--blanco);
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+/*--------------------------------------*/
+
+/* Sección Nuestros Servicios */
+#services{
+    margin: 0 300px;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 32px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+}
+
+
+.feature {
+    background-color: var(--azul_6);
+    color: var(--blanco);
+    padding: 10px;
+    border-radius: 30px;
+    width: 25%;
+    text-align: center;
+}
+
+/*--------------------------------------*/
+
+/* Sección Noticias */
+#noticias {
+    background-color: var(--azul_3);
+    padding: 20px 0;
+}
+
+#noticias h2 {
+    text-align: center;
+}
+
+#news-container{
+    color: var(--blanco);
+    margin: 0 300px;
+    background-color: var(--azul_3);
+}
+
+    /* Estilos de las noticias */
+.noticia {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.noticia h3 {
+    margin: 0;
+    font-size: 22px;
+}
+.noticia p {
+    margin: 10px 0;
+}
+.noticia small {
+    font-size: 14px;
+}
+
+/*--------------------------------------*/
+
+/* Sección Opinion Clientes*/
+#clientes {
+    background-color: var(--blanco);
+    padding: 20px;
+}
+
+#clientes h2 {
+    text-align: center;
+}
+
+#clientes-opinion {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+blockquote {
+    padding: 15px;
+    border-left: 5px solid var(--naranja);
+    border-radius: 5px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+blockquote span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: right;
+}
+
